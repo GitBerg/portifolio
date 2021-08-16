@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.sideBar{
+    display: flex;
+    align-items: center;
+    background-color: #303030;
+    line-height: 80px;
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    height: 100vh;
+    z-index: 10;
+}
+
+.option{
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    color: #20c4FA;
+    font-size: 23px;
+    font-weight: 400;
+    transition: 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.sideBar ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.sideBar ul li a{
+    pointer-events: initial;
+    z-index: 1;
+}
+
+.sideBar ul li::before{
+    content: attr(data-Text);
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 7em;
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    white-space: nowrap;
+    transition: 0.5s;
+    letter-spacing: 10px;
+}
+
+.sideBar ul li:hover:before{
+    opacity: 0.05;  
+    letter-spacing: 0px; 
+}
+
+.sideBar ul:hover li a{
+   opacity: 0;
+}
+
+.sideBar ul li a:hover{
+    font-size: 2em;
+    font-weight: 500;
+    opacity: 1;
+    color: #Fd7900;
+ }
+
+
+
