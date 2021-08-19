@@ -5,10 +5,8 @@ function Home() {
     return (
         <body>
             <div className="page">
-                <section>
-                    <SideBar />
-                </section>
-                <section>
+                <SideBar />
+                <section className="sideCenter">
 
                 </section>
             </div>
